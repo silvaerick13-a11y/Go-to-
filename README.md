@@ -1,83 +1,140 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-">
-  <title>Colégio Estadual Dom Carlos</title>
-  
-</head>
-<body>
-  <header>
-    <h1>Colégio Estadual Dom Carlos</h1>
-    <p>Educação, cidadania e compromisso com o futuro.</p>
-  </header>
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
 
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#agenda">Agenda</a>
-    <a href="#contato">Contato</a>
-  </nav>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: 1f2937;
+    background-color: f4f7fb;
+    line-height: 1.6;
+}
 
-  <section class="hero" id="inicio">
-    <h2>Bem-vindo ao nosso portal escolar</h2>
-    <p>
-      Um site simples para apresentar informações do colégio, comunicados,
-      atividades e contato com a comunidade escolar.
-    </p>
-    <a href="#sobre" class="btn">Conhecer o colégio</a>
-  </section>
+.container{
+    width: 90%;
+    ma.6x-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background: linear-gradient(135deg,#0d47a1, #1976d2, #42a5f5);
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) ;
+}
 
-  <main class="container">
-    <section id="sobre" class="info-box">
-      <h2>Sobre o Colégio</h2>
-      <p>
-        O Colégio Estadual Dom Carlos tem como missão oferecer ensino de qualidade,
-        promovendo o desenvolvimento acadêmico, social e humano dos estudantes.
-        Aqui valorizamos o respeito, a disciplina e a participação da comunidade.
-      </p>
-    </section>
-<!--Feito a te aqui Ficou pra proxima aula o restante -->
-    <section id="cursos">
-      <div class="cards">
-        <div class="card">
-          <h3>Ensino Fundamental</h3>
-          <p>Formação básica com foco no desenvolvimento integral dos alunos.</p>
-        </div>
-        <div class="card">
-          <h3>Ensino Médio</h3>
-          <p>Preparação para o futuro acadêmico, profissional e social.</p>
-        </div>
-        <div class="card">
-          <h3>Projetos Escolares</h3>
-          <p>Feiras, oficinas, esportes, leitura e atividades culturais.</p>
-        </div>
-      </div>
-    </section>
+header h1{
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
 
-    <section id="agenda" class="info-box">
-      <h2>Agenda e Avisos</h2>
-      <ul class="agenda">
-        <li><strong>20/03:</strong> Reunião com responsáveis às 19h.</li>
-        <li><strong>25/03:</strong> Início da semana de avaliações.</li>
-        <li><strong>02/04:</strong> Feira cultural no pátio da escola.</li>
-      </ul>
-    </section>
+header p{
+text-align: center;
+font-size: 1.05rem;
+opacity: 10px;
+}
 
-    <section id="contato" class="info-box">
-      <h2>Contato</h2>
-      <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro</p>
-      <p><strong>Telefone:</strong> (00) 0000-0000</p>
-      <p><strong>E-mail:</strong> contato@domcarlos.edu.br</p>
-      <p><strong>Horário de atendimento:</strong> Segunda a sexta, das 7h às 18h</p>
-    </section>
-  </main>
+nav{
+    background: #08306b;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-  <footer>
-    <p>&copy; 2026 Colégio Estadual Dom Carlos - Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.hero{
+    background-color: linear-gradient(to right, rgba(13, 71, 161, 0.88)),
+    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80&#39;);
+color: white;
+text-align: center;
+padding: 90px 20px;
+}
+
+.hero h2{
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.hero . btn{
+    display: inline-block;
+    background: #ffca28;
+    color: #0d47a1;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.hero .btn:hover{
+  background: #ffd54f;
+  transform: scale(1.05);
+}
+section{
+  padding: 60px 20px;
+}
+
+section h2{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0d471a;
+  position: relative;
+}
+
+section h2: :after{
+  content: "";
+  display: block;
+  width: 4px:
+  background: #42a5f5;
+  border-radius: 10px;
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mainmax(2260px, 1fr));
+    gap: 22px;
+  }
+
+  .card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+  }
+
+.card: :hover{
+  transform: translateY()
+}
