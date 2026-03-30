@@ -10,7 +10,7 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: 1f2937;
-    background-color: f4f7fb;
+    background-color: #2f3946;
     line-height: 1.6;
 }
 
