@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoad", function()){
-    //Corrige o ul da engenda caso a classe nao esteja certa
     const secaoAgenda = document.querySelector("#agenda");
-
+    if (secaoAgenda) {
+        counst ulAgenda.clasList.add("agenda");
+    }
+{
+    cost secaoContato = document.querySelector("#contato");
+    if(secaoContato){
+        secaoContato.classicList.add(contato-box);
+    }
 
 });
